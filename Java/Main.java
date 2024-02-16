@@ -211,6 +211,9 @@ public class Main
                                 longestTypes = list.get(i).getTypes().length();
                             }
                         }
+                        System.out.println("+------------------+");
+                        System.out.println("| Menampilkan Data |");
+                        System.out.println("+------------------+");
                         //garis tabel
                         // ================================//
                         System.out.print("+-");
