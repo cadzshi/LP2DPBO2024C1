@@ -398,9 +398,9 @@ public class Main
                             System.out.print(" | " + list.get(i).getTypes());
                             for (int j = 0; j < longestTypes - list.get(i).getTypes().length(); j++) 
                             {
-                                System.out.print(" |"); 
+                                System.out.print(" "); 
                             }
-                            System.out.println("");
+                            System.out.println(" |");
                         }
 
                         System.out.print("+-");
