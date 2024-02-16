@@ -1,20 +1,24 @@
+/*
+    Saya Sabila Rosad NIM 2106000 mengerjakan latihan 1
+    dalam mata kuliah Desain Pemrograman Berorientasi Objek
+    untuk keberkahanNya maka saya tidak melakukan
+    kecurangan seperti yang telah dispesifikasikan
+*/
+//library
 import java.util.Scanner;
 import java.util.ArrayList;
-
+//deklarasi class
 public class Main 
 {
     public static void main(String[] args) 
     {
-                
-
+        //deklarasi array
         ArrayList<Shirt> list = new ArrayList<>();
+        //instansiasi n inisialisasi
         int menu = 0;
-        // String id, name, brand, price, size, material, gender, color, types;
         String id = "", name = "", brand = "", price = "", size = "", material = "", gender = "", color = "", types = "";
-
-
         Scanner scanner = new Scanner(System.in);
-
+        //looping
         do {
             //output pilihan menu
             System.out.println("+-------------------------------+");
@@ -34,9 +38,10 @@ public class Main
             {
                 System.out.println("Input tidak sesuai!");
             }
-
+            //switch case
             switch (menu) 
             {
+                //case 1 untuk menambahkan data
                 case 1:
                     System.out.print("\033[H\033[2J");
                     System.out.flush();
@@ -135,8 +140,9 @@ public class Main
                     {
                         System.out.println("Input tidak sesuai!");
                     }
-
+                    //instansiasi
                     Shirt temp = new Shirt();
+                    //input user dimasukkan ke temp menggunakan setter dengan masing masing atribut
                     temp.setId(id);
                     temp.setName(name);
                     temp.setBrand(brand);
@@ -146,15 +152,14 @@ public class Main
                     temp.setGender(gender);
                     temp.setColor(color);
                     temp.setTypes(types);
-
+                    //objek dimasukkan ke list
                     list.add(temp);
 
                     System.out.println("\n Data Berhasil Ditambahkan!");
                     break;
-                    
+                    //case 2 untuk menampilkan data
                     case 2:
-
-
+                    //untuk check apakah data kosonng atau tidak
                     boolean isEmpty = list.isEmpty();
                     if (isEmpty == true) 
                     {
@@ -162,10 +167,11 @@ public class Main
                     }
                     else
                     {
+                        //penanda kata terpanjang
                         int longestId = 2, longestName = 4, longestBrand = 5, longestPrice = 5;
                         int longestSize = 4, longestMaterial = 8, longestGender = 6;
                         int longestColor = 5, longestTypes = 6;
-
+                        //mencari kata terpanjang
                         for (int i = 0; i < list.size(); i++) 
                         {
                             if (list.get(i).getId().length() > longestId) 
@@ -205,7 +211,7 @@ public class Main
                                 longestTypes = list.get(i).getTypes().length();
                             }
                         }
-
+                        //garis tabel
                         // ================================//
                         System.out.print("+-");
                         for (int i = 0; i < longestId; i++) 
@@ -254,7 +260,7 @@ public class Main
                         }
                         System.out.println("-+");
                     
-                        
+                        //kolom
                         // ================================//
                         System.out.print("| ID");
                         for (int i = 0; i < longestId - 1; i++) 
@@ -303,6 +309,7 @@ public class Main
                         }
                         System.out.println(" |");
 
+                        //garis lagi
                         // ================================//
                         System.out.print("+-");
                         for (int i = 0; i < longestId; i++) 
@@ -351,6 +358,7 @@ public class Main
                         }
                         System.out.println("-+");
 
+                        //print isi tabel
                         // ================================//
                         for (int i = 0; i < list.size(); i++) 
                         {
@@ -402,7 +410,8 @@ public class Main
                             }
                             System.out.println(" |");
                         }
-
+                        //garis
+                        // ================================//
                         System.out.print("+-");
                         for (int i = 0; i < longestId; i++) 
                         {
@@ -453,7 +462,9 @@ public class Main
                 default:
                     break;
             }
+            //keluar program jika pilihan 3
         } while (menu != 3);
+        scanner.close();
     }
 }
 
