@@ -37,34 +37,34 @@ $shirt2->setColor("Blue");
 $shirt2->setTypes("Short");
 
 $shirt3->setId("3");
-$shirt3->setName("Hoodie");
+$shirt3->setName("AIRism T-Shirt");
 $shirt3->setBrand("Uniqlo");
-$shirt3->setPrice("450000");
+$shirt3->setPrice("149000");
 $shirt3->setSize("L");
-$shirt3->setMaterial("Fleece");
+$shirt3->setMaterial("Cotton");
 $shirt3->setGender("Unisex");
 $shirt3->setColor("White");
-$shirt3->setTypes("Long");
+$shirt3->setTypes("Short");
 
 $shirt4->setId("4");
-$shirt4->setName("Blouse");
+$shirt4->setName("Linen Shirt");
 $shirt4->setBrand("ZARA");
 $shirt4->setPrice("999000");
 $shirt4->setSize("XL");
-$shirt4->setMaterial("Sifon");
+$shirt4->setMaterial("Linen");
 $shirt4->setGender("Woman");
 $shirt4->setColor("Purple");
 $shirt4->setTypes("Long");
 
 $shirt5->setId("5");
-$shirt5->setName("Crewneck");
+$shirt5->setName("BAPE T-shirt");
 $shirt5->setBrand("A Bathing Ape");
 $shirt5->setPrice("3500000");
 $shirt5->setSize("XXL");
 $shirt5->setMaterial("Cotton");
 $shirt5->setGender("Man");
 $shirt5->setColor("Grey");
-$shirt5->setTypes("Long");
+$shirt5->setTypes("Short");
 
 //masukkan objek ke array
 $shirt = array($shirt1, $shirt2, $shirt3, $shirt4, $shirt5);
