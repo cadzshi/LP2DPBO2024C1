@@ -77,7 +77,7 @@ Lalu untuk alur program : <br>
 1. Compile file sesuai bahasa
 2. Run programnya
 3. Ketika program berhasil dijalankan, maka akan keluar sebuah menu yang berisi 3 pilihan yaitu:
-   - 1. menambahkan data : untuk menambahkan data shirt
-   - 2. menampilkan data : untuk menampilkan keseluruhan isi data dengan table
-   - 3. keluar dari program
+   - menambahkan data : untuk menambahkan data shirt
+   - menampilkan data : untuk menampilkan keseluruhan isi data dengan table
+   - keluar dari program
 4. Semua bahasa sudah menggunakan alur yang ke-3 kecuali PHP karna di Hardcoded
